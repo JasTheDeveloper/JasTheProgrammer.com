@@ -449,4 +449,55 @@ nav a:not(:last-child)::after {
     margin-top: 3rem;
     margin-bottom: 2rem; /* Give it more breathing room */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for depth */
+
+}
+
+/* ======================================= */
+/* RESPONSIVE DESIGN: Tablet and Mobile   */
+/* ======================================= */
+
+@media (max-width: 768px) {
+    /* Your new mobile-specific styles will go here */
+}
+
+/* Inside the @media (max-width: 768px) block */
+.overlay {
+    padding: 2rem; /* Reduce padding for smaller screens */
+    width: 95%; /* Take up more of the screen width */
+}
+
+/* Adjust the navigation bar for mobile */
+nav {
+    font-size: 1.2rem; /* Make the font smaller */
+    line-height: 1.5; /* Add more space between lines */
+    display: flex; /* Flexbox is still good */
+    flex-direction: column; /* CRITICAL: Stack the links vertically */
+    gap: 10px; /* Add some space between the stacked links */
+}
+
+/* Adjust the hero text and headings */
+.aboutMe-section p,
+.skills p {
+    font-size: 1rem; /* Smaller font size for body text */
+    line-height: 1.8; /* Make text easier to read with more line height */
+}
+
+/* Fix the portfolio section to stack the image and text */
+.portfolio-container {
+    flex-direction: column; /* CRITICAL: Stack image and text vertically */
+    text-align: center;
+}
+
+.portfolio-container p {
+    margin-left: 0; /* Remove the margin from the side of the text */
+    margin-top: 1rem; /* Add margin above the text */
+}
+
+.portfolio-image {
+    max-width: 80%; /* Let the image take up more of the width */
+}
+
+/* Fix the packages grid to show only one card per row */
+.packages-grid {
+    grid-template-columns: 1fr; /* CRITICAL: Change to a single column */
 }

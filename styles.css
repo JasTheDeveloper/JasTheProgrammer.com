@@ -458,9 +458,8 @@ nav a:not(:last-child)::after {
 
 @media (max-width: 768px) {
     /* Your new mobile-specific styles will go here */
-}
 
-/* Inside the @media (max-width: 768px) block */
+    /* Inside the @media (max-width: 768px) block */
 .overlay {
     padding: 2rem; /* Reduce padding for smaller screens */
     width: 95%; /* Take up more of the screen width */
@@ -501,3 +500,7 @@ nav {
 .packages-grid {
     grid-template-columns: 1fr; /* CRITICAL: Change to a single column */
 }
+}
+
+
+

@@ -500,7 +500,10 @@ nav {
 .packages-grid {
     grid-template-columns: 1fr; /* CRITICAL: Change to a single column */
 }
+
+
 }
+
 
 
 
